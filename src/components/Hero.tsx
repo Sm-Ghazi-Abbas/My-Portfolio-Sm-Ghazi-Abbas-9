@@ -47,7 +47,7 @@ export default function Hero({ activeLens, onLensChange, onOpenResume }: HeroPro
           <span aria-hidden="true" className="text-slate-600">·</span>
           <span>FCCU Pre-Engineering Alum</span>
           <span aria-hidden="true" className="text-slate-600">·</span>
-          <span className="text-emerald-400 font-medium">Available for Software & Growth Roles</span>
+          <span className="text-emerald-400 font-medium">Available for AI & Growth Roles</span>
           <span aria-hidden="true" className="text-slate-600">·</span>
           <span className="flex items-center gap-1 text-slate-300">
             <MapPin className="w-3 h-3 text-cyan-400" /> Lahore, Pakistan
@@ -56,14 +56,14 @@ export default function Hero({ activeLens, onLensChange, onOpenResume }: HeroPro
 
         {/* Hero Title & Value Proposition */}
         <div className="max-w-4xl mb-8">
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold font-['Space_Grotesk'] tracking-tight text-white leading-[1.08] mb-6">
-            Building Scalable Software. <br />
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] font-bold font-['Space_Grotesk'] tracking-tight text-white leading-[1.2] mb-5">
+            Building Scalable Digital Products. <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-sky-300 to-indigo-300">
               Engineering Commercial Growth.
             </span>
           </h1>
 
-          <p className="text-lg sm:text-xl font-medium text-slate-300 leading-relaxed mb-4">
+          <p className="text-base sm:text-lg font-medium text-slate-300 leading-relaxed mb-3">
             Hi, I'm <strong className="text-white font-semibold">{PERSONAL_INFO.name}</strong> — {PERSONAL_INFO.headline}.
           </p>
 

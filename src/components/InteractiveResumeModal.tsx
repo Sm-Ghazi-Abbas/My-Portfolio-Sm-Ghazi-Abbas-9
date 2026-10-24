@@ -32,7 +32,7 @@ export default function InteractiveResumeModal({ isOpen, onClose }: InteractiveR
   const handleCopyText = () => {
     const fullText = `
 SYED M GHAZI ABBAS
-BSCS Student | Tech & Marketing Enthusiast
+AI Engineer and Growth Strategist
 Lahore, Pakistan | 0320-4406286 | smghaziabbas88@gmail.com
 LinkedIn: https://linkedin.com/in/sm-ghazi-abbas-393216332
 GitHub: https://github.com/Sm-Ghazi-Abbas
@@ -101,7 +101,7 @@ EDUCATION
 • Pre-Engineering - Intermediate (FSC) | FCCU (2021 - 2023, Lahore)
 
 SKILLS
-• Technical: Python, React Native, JavaScript (ES6+), Git & GitHub, AWS (EC2, CloudWatch), JSON Server / REST API, Figma (UI/UX), Unity Engine (C#)
+• Technical: Full Stack Development (Web & Mobile Applications), Python, JavaScript (ES6+), React Native, Git & GitHub, AWS (EC2, CloudWatch), JSON Server / REST API, Figma (UI/UX), Unity Engine (C#)
 • Business & Growth: Strategic Planning, AI-Driven Marketing, Brand Development, Data Analysis, HR Management, Technical SEO, Negotiation
 • Soft Skills: Problem Solving, Crisis Management, Communication
 • Languages: Urdu (Native), English (Fluent)
@@ -165,7 +165,7 @@ SKILLS
               SYED M GHAZI ABBAS
             </h1>
             <div className="text-cyan-400 font-semibold text-sm mt-0.5">
-              BSCS Student | Tech & Marketing Enthusiast
+              AI Engineer and Growth Strategist
             </div>
             
             <div className="flex flex-wrap items-center justify-center sm:justify-start gap-y-1 gap-x-4 text-xs text-slate-400 font-mono mt-2.5">
@@ -470,7 +470,7 @@ SKILLS
               SKILLS
             </h2>
             <div className="space-y-1 text-xs text-slate-300">
-              <div><strong className="text-white">Technical:</strong> Python, React Native, JavaScript (ES6+), Git & GitHub, AWS (EC2, CloudWatch), JSON Server / REST API, Figma (UI/UX), Unity Engine (C#)</div>
+              <div><strong className="text-white">Technical:</strong> Full Stack Development (Web & Mobile Applications), Python, JavaScript (ES6+), React Native, Git & GitHub, AWS (EC2, CloudWatch), JSON Server / REST API, Figma (UI/UX), Unity Engine (C#)</div>
               <div><strong className="text-white">Business:</strong> Strategic Planning, AI-Driven Marketing, Brand Development, Data Analysis, Negotiation</div>
               <div><strong className="text-white">Soft Skills:</strong> Problem Solving, Crisis Management, Communication</div>
               <div><strong className="text-white">Languages:</strong> Urdu (Native), English (Fluent)</div>

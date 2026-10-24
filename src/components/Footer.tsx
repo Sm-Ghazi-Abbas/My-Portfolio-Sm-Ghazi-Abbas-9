@@ -17,7 +17,7 @@ export default function Footer() {
               Syed M. Ghazi Abbas
             </span>
             <p className="text-slate-500 text-[11px]">
-              Computer Science @ UMT Lahore · Software Engineer & Growth Strategist
+              Computer Science @ UMT Lahore · AI Engineer and Growth Strategist
             </p>
           </div>
 

@@ -64,7 +64,7 @@ export default function Navbar({ activeLens, onLensChange, onOpenResume }: Navba
                 Syed M. Ghazi Abbas
               </span>
               <span className="text-[11px] text-slate-400 font-mono">
-                Software Engineer & Growth
+                AI Engineer & Growth Strategist
               </span>
             </div>
           </a>

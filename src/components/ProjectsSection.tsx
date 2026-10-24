@@ -77,7 +77,7 @@ export default function ProjectsSection({ activeLens, onSelectProject }: Project
             <div className="text-xs font-mono text-cyan-400 uppercase tracking-wider mb-2 font-semibold">
               Selected Work & Case Studies
             </div>
-            <h2 className="text-3xl sm:text-5xl font-bold font-['Space_Grotesk'] tracking-tight text-white">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-['Space_Grotesk'] tracking-tight text-white">
               Featured Engineering & Growth Projects
             </h2>
             <p className="text-slate-400 text-sm sm:text-base mt-2 max-w-2xl">

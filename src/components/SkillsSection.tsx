@@ -57,7 +57,7 @@ export default function SkillsSection({ activeLens }: SkillsSectionProps) {
             <div className="text-xs font-mono text-cyan-400 uppercase tracking-wider mb-2 font-semibold">
               Capabilities & Tooling
             </div>
-            <h2 className="text-3xl sm:text-5xl font-bold font-['Space_Grotesk'] tracking-tight text-white">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-['Space_Grotesk'] tracking-tight text-white">
               Skills & Domain Expertise
             </h2>
             <p className="text-slate-400 text-sm sm:text-base mt-2 max-w-2xl">

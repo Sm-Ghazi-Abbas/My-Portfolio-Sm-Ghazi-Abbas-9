@@ -2,8 +2,8 @@ import { Project, ExperienceItem, Certification, EducationItem, SkillCategory, A
 
 export const PERSONAL_INFO = {
   name: 'Syed M Ghazi Abbas',
-  title: 'BSCS Student | Tech & Marketing Enthusiast',
-  headline: 'Software Engineer & Growth Strategist',
+  title: 'AI Engineer and Growth Strategist',
+  headline: 'AI Engineer and Growth Strategist',
   location: 'Lahore, Pakistan',
   phone: '0320-4406286',
   phoneInternational: '+92 320 4406286',
@@ -19,13 +19,13 @@ export const PERSONAL_INFO = {
   institution: 'UMT Lahore (University of Management and Technology)',
   degree: 'Bachelor of Science in Computer Science (BSCS)',
   summary:
-    'Computer Science student at UMT Lahore who combines technical skills in React Native, Python, and cloud tools with a strong interest in marketing and management. Proven ability to take projects from concept to working prototype, backed by real-world experience in AI marketing, HR, and sales.',
+    'Computer Science student at UMT Lahore and Full Stack Developer for web and mobile applications who combines technical skills in Python and cloud tools with a strong interest in marketing and management. Proven ability to take projects from concept to working prototype, backed by real-world experience in AI marketing, HR, and sales.',
   hybridPitch:
-    'Most developers stop at code; most marketers cannot read a codebase. I bridge both worlds — designing robust software (React Native, Python, AWS) and driving commercial impact through AI automations, technical SEO, brand positioning, and structured sales pipelines.',
+    'Most developers stop at code; most marketers cannot build or orchestrate AI pipelines. As a Full Stack Developer for web and mobile applications and AI Growth Strategist, I bridge both worlds — architecting robust digital products (web, mobile, Python, AWS cloud) and driving measurable commercial impact through technical SEO, AI automations, brand positioning, and structured sales funnels.',
   stats: [
-    { label: 'Technical Projects', value: '6+', desc: 'Cloud, Mobile, SEO & AI' },
+    { label: 'Technical Projects', value: '6+', desc: 'Web, Mobile, Cloud, SEO & AI' },
     { label: 'AWS Certifications', value: '3', desc: 'EC2 & CloudWatch Verified' },
-    { label: 'Lines of Code (Mobile)', value: '1,500+', desc: 'React Native Architecture' },
+    { label: 'Web & Mobile Apps', value: 'Full-Stack', desc: 'Cross-Platform Architecture' },
     { label: 'Industry Internships', value: '5', desc: 'SEO, AI, Automation, HR & Sales' },
   ]
 };
@@ -414,17 +414,17 @@ export const EDUCATION: EducationItem[] = [
 
 export const SKILL_CATEGORIES: SkillCategory[] = [
   {
-    title: 'Technical & Software Development',
-    description: 'Modern programming languages, mobile engineering, game systems, and clean code architecture.',
+    title: 'Full-Stack Web & Mobile Development',
+    description: 'Full-stack engineering for web and mobile applications, scalable API architecture, and clean component systems.',
     iconName: 'Code',
     lensCategory: 'engineering',
     skills: [
+      { name: 'Full-Stack Web & Mobile', level: 'Web & Mobile Apps', highlight: 'React, React Native, REST APIs, modular UI/UX' },
       { name: 'Python', level: 'Core Language', highlight: 'Algorithms, automation scripts, data structures' },
-      { name: 'React Native', level: 'Specialist', highlight: '5+ screens, ~1,500+ LOC, modular components' },
-      { name: 'JavaScript (ES6+)', level: 'Advanced', highlight: 'Modern async/await, DOM, modular patterns' },
-      { name: 'Unity Engine (C#)', level: '3D Gameplay', highlight: 'First-person physics, spatial audio, scripting' },
-      { name: 'Git & GitHub', level: 'Version Control', highlight: 'Public repositories, branch workflows, collaboration' },
-      { name: 'JSON Server / REST API', level: 'Backend & APIs', highlight: 'Endpoint mocking, request validation, CRUD' }
+      { name: 'JavaScript & TypeScript', level: 'Advanced', highlight: 'Modern async/await, component state, full-stack tooling' },
+      { name: 'React Native', level: 'Mobile Architecture', highlight: 'Cross-platform mobile apps, state, REST integration' },
+      { name: 'JSON Server / REST API', level: 'Backend & APIs', highlight: 'Endpoint mocking, request validation, CRUD' },
+      { name: 'Git & GitHub', level: 'Version Control', highlight: 'Public repositories, branch workflows, collaboration' }
     ]
   },
   {
@@ -493,7 +493,7 @@ export const ARTICLES: ArticleItem[] = [
 
 export const TERMINAL_COMMANDS: Record<string, string> = {
   help: 'Available commands: about, skills, projects, experience, certs, blog, education, contact, hire, pitch, social, clear',
-  about: 'SYED M GHAZI ABBAS | BSCS Student at UMT Lahore. Combines technical prowess in React Native, Python & AWS with proven commercial experience in AI marketing, SEO, HR operations, and sales pipeline generation.',
+  about: 'SYED M GHAZI ABBAS | AI Engineer and Growth Strategist. Combines technical prowess in AI automations, React Native, Python & AWS with proven commercial experience in AI marketing, technical SEO, HR operations, and sales pipeline generation.',
   skills: 'Technical: Python, React Native, JS (ES6+), AWS (EC2, CloudWatch), Git, Figma, Unity (C#).\nBusiness & Growth: AI Marketing, Technical SEO, AI Automation, HR Management, Strategic Planning, Negotiation, Brand Strategy.',
   projects: '1. Zero-Trust Cloud Security (AWS IAM/KMS/S3)\n2. Restaurant Reservation App (React Native, 1500+ LOC)\n3. DevLogix & Client SEO Optimization Engine (Full Overhaul)\n4. Uni-Pool Carpooling (Figma/Flutter/Pink-Pool)\n5. AI Automation & Prospecting Workflows\n6. Escape the Haunted Room (Unity 3D/C#)\n7. Python Learning Portfolio',
   experience: '• DevLogix: Digital Marketing & SEO Intern (Aug 2026 - Nov 2026)\n• Logitrix Solutions: AI Automation Intern (Aug 2026 - Oct 2026)\n• FlyRank AI: AI Marketing Intern (Jul 2026 - Sep 2026)\n• CodeAlpha: Human Resources Management Intern (1 Month Remote)\n• Pro Recruit: Recruitment Intern (2024)',
