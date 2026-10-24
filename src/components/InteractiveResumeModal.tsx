@@ -33,7 +33,7 @@ export default function InteractiveResumeModal({ isOpen, onClose }: InteractiveR
     const fullText = `
 SYED M GHAZI ABBAS
 BSCS Student | Tech & Marketing Enthusiast
-Lahore, Pakistan | 0332-4222512 | smghaziabbas88@gmail.com
+Lahore, Pakistan | 0320-4406286 | smghaziabbas88@gmail.com
 LinkedIn: https://linkedin.com/in/sm-ghazi-abbas-393216332
 GitHub: https://github.com/Sm-Ghazi-Abbas
 Medium: https://smghaziabbas.medium.com/
@@ -174,7 +174,7 @@ SKILLS
               </span>
               <span>•</span>
               <span className="flex items-center gap-1">
-                <Phone className="w-3 h-3 text-emerald-400" /> 0332-4222512
+                <Phone className="w-3 h-3 text-emerald-400" /> {PERSONAL_INFO.phone}
               </span>
               <span>•</span>
               <span className="flex items-center gap-1">

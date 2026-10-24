@@ -16,7 +16,6 @@ import {
   Code, 
   TrendingUp, 
   ShieldCheck,
-  ChevronDown,
   BookOpen
 } from 'lucide-react';
 
@@ -38,72 +37,57 @@ export default function Hero({ activeLens, onLensChange, onOpenResume }: HeroPro
   return (
     <section
       id="overview"
-      className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden"
+      className="relative pt-32 pb-20 md:pt-40 md:pb-24 overflow-hidden"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
-        {/* Top Badges */}
-        <div className="flex flex-wrap items-center gap-3 mb-6">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900/90 border border-cyan-500/30 text-cyan-300 text-xs font-mono shadow-[0_0_15px_rgba(56,189,248,0.15)]">
-            <span className="h-2 w-2 rounded-full bg-cyan-400 animate-pulse" />
-            <span>UMT Lahore • BSCS Undergrad</span>
-          </div>
-
-          <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-900/90 border border-emerald-500/30 text-emerald-300 text-xs font-mono shadow-[0_0_15px_rgba(52,211,153,0.15)]">
-            <TrendingUp className="w-3.5 h-3.5" />
-            <span>Engineering × Marketing & Sales</span>
-          </div>
-
-          <a
-            href={PERSONAL_INFO.featuredArticleUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-900/90 border border-emerald-500/30 hover:border-emerald-400 text-emerald-300 text-xs font-mono transition-colors shadow-[0_0_12px_rgba(52,211,153,0.1)] group"
-          >
-            <BookOpen className="w-3.5 h-3.5 text-emerald-400" />
-            <span>Medium Blogger • AI Deep-Dives</span>
-            <ExternalLink className="w-3 h-3 text-emerald-400/70 group-hover:text-emerald-300" />
-          </a>
-
-          <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-900/90 border border-white/10 text-slate-300 text-xs font-mono">
-            <MapPin className="w-3.5 h-3.5 text-cyan-400" />
-            <span>Lahore, Pakistan</span>
-          </div>
+        {/* Availability / Domain Kicker */}
+        <div className="flex flex-wrap items-center gap-3 text-xs text-slate-400 mb-6 font-mono">
+          <span className="text-cyan-400 font-medium">UMT Lahore · BSCS</span>
+          <span aria-hidden="true" className="text-slate-600">·</span>
+          <span>FCCU Pre-Engineering Alum</span>
+          <span aria-hidden="true" className="text-slate-600">·</span>
+          <span className="text-emerald-400 font-medium">Available for Software & Growth Roles</span>
+          <span aria-hidden="true" className="text-slate-600">·</span>
+          <span className="flex items-center gap-1 text-slate-300">
+            <MapPin className="w-3 h-3 text-cyan-400" /> Lahore, Pakistan
+          </span>
         </div>
 
-        {/* Main Heading & Headline */}
-        <div className="max-w-4xl">
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold font-['Space_Grotesk'] tracking-tight text-white leading-[1.08] mb-6">
-            Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-sky-300 to-indigo-400">Syed M Ghazi Abbas</span>
+        {/* Hero Title & Value Proposition */}
+        <div className="max-w-4xl mb-8">
+          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold font-['Space_Grotesk'] tracking-tight text-white leading-[1.08] mb-6">
+            Building Scalable Software. <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-sky-300 to-indigo-300">
+              Engineering Commercial Growth.
+            </span>
           </h1>
 
-          <p className="text-lg sm:text-xl md:text-2xl font-medium text-slate-300 leading-relaxed mb-6 font-['Plus_Jakarta_Sans']">
-            {PERSONAL_INFO.title}
+          <p className="text-lg sm:text-xl font-medium text-slate-300 leading-relaxed mb-4">
+            Hi, I'm <strong className="text-white font-semibold">{PERSONAL_INFO.name}</strong> — {PERSONAL_INFO.headline}.
           </p>
 
-          <p className="text-base sm:text-lg text-slate-400 leading-relaxed mb-8 max-w-3xl">
+          <p className="text-sm sm:text-base text-slate-400 leading-relaxed max-w-3xl">
             {PERSONAL_INFO.summary}
           </p>
         </div>
 
         {/* The Hybrid Value Proposition Card */}
-        <div className="mb-10 max-w-4xl p-5 sm:p-6 rounded-2xl glass-panel border border-cyan-500/20 relative overflow-hidden group">
-          <div className="absolute top-0 right-0 w-64 h-64 bg-cyan-500/5 rounded-full blur-3xl pointer-events-none" />
-          <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-            <div className="space-y-1.5">
-              <div className="flex items-center gap-2 text-xs font-mono text-cyan-400 font-semibold tracking-wide uppercase">
-                <Sparkles className="w-3.5 h-3.5 text-cyan-400" />
-                <span>The Dual Advantage: Engineering + Growth</span>
+        <div className="mb-10 max-w-4xl p-5 sm:p-6 rounded-2xl glass-panel border border-slate-800 relative overflow-hidden">
+          <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-5">
+            <div className="space-y-1.5 flex-1">
+              <div className="text-xs font-mono text-cyan-400 font-semibold uppercase tracking-wider">
+                The Hybrid Advantage: Engineering × Growth
               </div>
-              <p className="text-sm sm:text-base text-slate-200 leading-relaxed">
+              <p className="text-sm text-slate-200 leading-relaxed">
                 {PERSONAL_INFO.hybridPitch}
               </p>
             </div>
 
-            {/* Lens Selector embedded in Hero */}
-            <div className="flex-shrink-0 w-full md:w-auto bg-black/40 p-1.5 rounded-xl border border-white/10">
+            {/* Lens Selector */}
+            <div className="flex-shrink-0 w-full md:w-auto bg-slate-900/90 p-1.5 rounded-xl border border-white/10">
               <div className="text-[11px] text-slate-400 px-2 py-0.5 font-mono">
-                View Portfolio by Lens:
+                View Portfolio Lens:
               </div>
               <div className="flex items-center gap-1 mt-1">
                 <button
@@ -115,7 +99,7 @@ export default function Hero({ activeLens, onLensChange, onOpenResume }: HeroPro
                       : 'text-slate-400 hover:text-white'
                   }`}
                 >
-                  Both (All)
+                  All Focus
                 </button>
                 <button
                   id="hero-lens-tech"
@@ -137,50 +121,54 @@ export default function Hero({ activeLens, onLensChange, onOpenResume }: HeroPro
                       : 'text-slate-400 hover:text-white'
                   }`}
                 >
-                  Marketing & Sales
+                  Marketing & SEO
                 </button>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Action Buttons & Contact Badges */}
-        <div className="flex flex-wrap items-center gap-4 mb-12">
+        {/* Primary Action Buttons */}
+        <div className="flex flex-wrap items-center gap-3.5 mb-12">
           <a
             id="hero-view-projects-btn"
             href="#projects"
-            className="px-6 py-3.5 rounded-xl text-sm font-semibold bg-gradient-to-r from-cyan-500 via-sky-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 shadow-[0_0_25px_rgba(56,189,248,0.35)] transition-all flex items-center gap-2 group"
+            className="px-6 py-3.5 rounded-xl text-xs sm:text-sm font-semibold bg-cyan-500 hover:bg-cyan-400 text-slate-950 shadow-[0_0_20px_rgba(56,189,248,0.25)] transition-all flex items-center gap-2 group"
           >
-            <span>Explore Technical & Growth Projects</span>
+            <span>Explore Selected Work</span>
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </a>
 
           <button
             id="hero-open-resume-btn"
             onClick={onOpenResume}
-            className="px-6 py-3.5 rounded-xl text-sm font-semibold bg-slate-900/90 hover:bg-slate-800 text-white border border-white/15 hover:border-cyan-500/40 transition-all flex items-center gap-2"
+            className="px-5 py-3.5 rounded-xl text-xs sm:text-sm font-semibold bg-white/5 hover:bg-white/10 text-white border border-white/10 hover:border-cyan-500/40 transition-all flex items-center gap-2"
           >
             <FileText className="w-4 h-4 text-cyan-400" />
-            <span>View & Print Resume</span>
+            <span>Interactive Resume (ATS)</span>
           </button>
 
           <a
-            id="hero-contact-btn"
-            href="#contact"
-            className="px-6 py-3.5 rounded-xl text-sm font-semibold bg-white/5 hover:bg-white/10 text-slate-200 border border-white/10 hover:border-white/20 transition-all flex items-center gap-2"
+            id="hero-medium-featured-btn"
+            href={PERSONAL_INFO.featuredArticleUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="px-5 py-3.5 rounded-xl text-xs sm:text-sm font-semibold bg-emerald-500/10 hover:bg-emerald-500/15 text-emerald-300 border border-emerald-500/30 hover:border-emerald-400 transition-all flex items-center gap-2"
           >
-            <span>Contact Syed</span>
+            <BookOpen className="w-4 h-4 text-emerald-400" />
+            <span>Medium Essay: AI Water Crisis</span>
+            <ExternalLink className="w-3.5 h-3.5 opacity-70" />
           </a>
         </div>
 
-        {/* Contact Pill Row with 1-click copy */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-3 max-w-5xl mb-14">
+        {/* Quick Contact & Social Channels Ribbon */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 max-w-5xl mb-14">
           {/* Email */}
-          <div className="p-3 rounded-xl bg-slate-900/60 border border-white/10 flex items-center justify-between group hover:border-cyan-500/30 transition-colors">
+          <div className="p-3.5 rounded-xl bg-slate-900/60 border border-white/10 flex items-center justify-between group hover:border-cyan-500/30 transition-colors">
             <div className="flex items-center gap-2.5 overflow-hidden">
               <Mail className="w-4 h-4 text-cyan-400 flex-shrink-0" />
               <div className="overflow-hidden">
-                <div className="text-[11px] text-slate-400 uppercase font-mono">Email</div>
+                <div className="text-[10px] text-slate-400 uppercase font-mono">Email</div>
                 <a
                   href={`mailto:${PERSONAL_INFO.email}`}
                   className="text-xs font-mono text-slate-200 truncate hover:text-cyan-300 block"
@@ -204,11 +192,11 @@ export default function Hero({ activeLens, onLensChange, onOpenResume }: HeroPro
           </div>
 
           {/* Phone */}
-          <div className="p-3 rounded-xl bg-slate-900/60 border border-white/10 flex items-center justify-between group hover:border-cyan-500/30 transition-colors">
+          <div className="p-3.5 rounded-xl bg-slate-900/60 border border-white/10 flex items-center justify-between group hover:border-cyan-500/30 transition-colors">
             <div className="flex items-center gap-2.5">
               <Phone className="w-4 h-4 text-emerald-400 flex-shrink-0" />
               <div>
-                <div className="text-[11px] text-slate-400 uppercase font-mono">Phone / WhatsApp</div>
+                <div className="text-[10px] text-slate-400 uppercase font-mono">Phone / WhatsApp</div>
                 <a
                   href={`tel:${PERSONAL_INFO.phone}`}
                   className="text-xs font-mono text-slate-200 hover:text-emerald-300"
@@ -237,12 +225,12 @@ export default function Hero({ activeLens, onLensChange, onOpenResume }: HeroPro
             href={PERSONAL_INFO.linkedinUrl}
             target="_blank"
             rel="noreferrer"
-            className="p-3 rounded-xl bg-slate-900/60 border border-white/10 flex items-center justify-between group hover:border-sky-500/40 transition-colors"
+            className="p-3.5 rounded-xl bg-slate-900/60 border border-white/10 flex items-center justify-between group hover:border-sky-500/40 transition-colors"
           >
             <div className="flex items-center gap-2.5 overflow-hidden">
               <Linkedin className="w-4 h-4 text-sky-400 flex-shrink-0" />
               <div className="overflow-hidden">
-                <div className="text-[11px] text-slate-400 uppercase font-mono">LinkedIn</div>
+                <div className="text-[10px] text-slate-400 uppercase font-mono">LinkedIn</div>
                 <div className="text-xs font-mono text-slate-200 truncate group-hover:text-sky-300">
                   /in/sm-ghazi-abbas
                 </div>
@@ -257,12 +245,12 @@ export default function Hero({ activeLens, onLensChange, onOpenResume }: HeroPro
             href={PERSONAL_INFO.githubUrl}
             target="_blank"
             rel="noreferrer"
-            className="p-3 rounded-xl bg-slate-900/60 border border-white/10 flex items-center justify-between group hover:border-purple-500/40 transition-colors"
+            className="p-3.5 rounded-xl bg-slate-900/60 border border-white/10 flex items-center justify-between group hover:border-purple-500/40 transition-colors"
           >
             <div className="flex items-center gap-2.5 overflow-hidden">
               <Github className="w-4 h-4 text-purple-400 flex-shrink-0" />
               <div className="overflow-hidden">
-                <div className="text-[11px] text-slate-400 uppercase font-mono">GitHub</div>
+                <div className="text-[10px] text-slate-400 uppercase font-mono">GitHub</div>
                 <div className="text-xs font-mono text-slate-200 truncate group-hover:text-purple-300">
                   Sm-Ghazi-Abbas
                 </div>
@@ -274,17 +262,17 @@ export default function Hero({ activeLens, onLensChange, onOpenResume }: HeroPro
           {/* Medium */}
           <a
             id="hero-medium-link"
-            href={PERSONAL_INFO.featuredArticleUrl}
+            href={PERSONAL_INFO.mediumUrl}
             target="_blank"
             rel="noreferrer"
-            className="p-3 rounded-xl bg-slate-900/60 border border-emerald-500/20 flex items-center justify-between group hover:border-emerald-500/50 transition-colors"
+            className="p-3.5 rounded-xl bg-slate-900/60 border border-emerald-500/20 flex items-center justify-between group hover:border-emerald-500/50 transition-colors"
           >
             <div className="flex items-center gap-2.5 overflow-hidden">
               <BookOpen className="w-4 h-4 text-emerald-400 flex-shrink-0" />
               <div className="overflow-hidden">
-                <div className="text-[11px] text-emerald-400 uppercase font-mono">Medium Blog</div>
+                <div className="text-[10px] text-emerald-400 uppercase font-mono">Medium Blog</div>
                 <div className="text-xs font-mono text-slate-200 truncate group-hover:text-emerald-300">
-                  AI Water Crisis
+                  @smghaziabbas
                 </div>
               </div>
             </div>
@@ -297,12 +285,12 @@ export default function Hero({ activeLens, onLensChange, onOpenResume }: HeroPro
           {PERSONAL_INFO.stats.map((stat, idx) => (
             <div
               key={idx}
-              className="p-4 rounded-xl bg-gradient-to-b from-slate-900/80 to-slate-950/90 border border-white/10 hover:border-cyan-500/30 transition-all group"
+              className="p-5 rounded-2xl bg-slate-900/70 border border-slate-800 hover:border-cyan-500/30 transition-all group"
             >
-              <div className="text-2xl sm:text-3xl font-extrabold font-['Space_Grotesk'] text-white group-hover:text-cyan-400 transition-colors">
+              <div className="text-3xl font-bold font-['Space_Grotesk'] text-white group-hover:text-cyan-400 transition-colors tabular-nums">
                 {stat.value}
               </div>
-              <div className="text-xs sm:text-sm font-semibold text-slate-200 mt-1">
+              <div className="text-xs font-semibold text-slate-200 mt-1">
                 {stat.label}
               </div>
               <div className="text-[11px] text-slate-400 mt-0.5">

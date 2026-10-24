@@ -9,7 +9,6 @@ import SkillsSection from './components/SkillsSection';
 import CertificationsSection from './components/CertificationsSection';
 import EducationSection from './components/EducationSection';
 import ArticlesSection from './components/ArticlesSection';
-import DevTerminal from './components/DevTerminal';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import ProjectModal from './components/ProjectModal';
@@ -21,12 +20,12 @@ export default function App() {
   const [resumeOpen, setResumeOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-[#090b10] text-[#e2e8f0] relative overflow-x-hidden selection:bg-cyan-500/20 selection:text-cyan-300">
-      {/* Background Starfield & Subtle Cosmic Mesh */}
+    <div className="min-h-screen bg-[#080b11] text-[#e2e8f0] relative overflow-x-hidden selection:bg-cyan-500/20 selection:text-cyan-300">
+      {/* Ambient background lighting */}
       <CosmicBackground />
       
-      {/* Ambient Grid overlay */}
-      <div className="fixed inset-0 bg-grid-pattern pointer-events-none opacity-40 z-0" />
+      {/* Subtle micro grid pattern */}
+      <div className="fixed inset-0 bg-grid-pattern pointer-events-none opacity-25 z-0" />
 
       {/* Main App Layout */}
       <div className="relative z-10 flex flex-col min-h-screen">
@@ -52,25 +51,22 @@ export default function App() {
             onSelectProject={(proj) => setSelectedProject(proj)}
           />
 
-          {/* Real-world Internships & Experience */}
+          {/* Industry Internships & Career Experience */}
           <ExperienceSection activeLens={activeLens} />
 
-          {/* Skills & Domain Competencies Matrix */}
+          {/* Skills & Domain Competencies */}
           <SkillsSection activeLens={activeLens} />
 
           {/* AWS Cloud Certifications */}
           <CertificationsSection />
 
-          {/* Education Foundations (UMT & FCCU) */}
+          {/* Academic Foundations (UMT & FCCU) */}
           <EducationSection />
 
           {/* Medium Essays & Thought Leadership */}
           <ArticlesSection />
 
-          {/* Interactive DevHQ Terminal */}
-          <DevTerminal />
-
-          {/* Contact & Proposal Section */}
+          {/* Contact & Inquiries */}
           <ContactSection />
         </main>
 
